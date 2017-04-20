@@ -6,10 +6,15 @@
 using namespace cv;
 using namespace std;
 
+HoughCircleTransform
+
 /** @function main */
 int main(int argc, char** argv)
 {
-	Mat src, src_gray;
+	Mat src, src_gray, src_gray_blur, src_edges;
+    int medianBlurThres = 7;
+    int cannyThres1 = 500;
+    int cannyThres2 = 150;
 
 	/// Read the image
 	src = imread( argv[1], 1 );
@@ -21,12 +26,14 @@ int main(int argc, char** argv)
 	cvtColor( src, src_gray, CV_BGR2GRAY );
 
 	/// Reduce the noise so we avoid false circle detection
-	medianBlur( src_gray, src_gray, 7 );
+	medianBlur( src_gray, src_gray_blur, medianBlurThres);
 
-	vector<Vec3f> circles;
+    /// Apply Canny Edge detection on the image
+    Canny(src_gray_blur, src_edges, cannyThres1, cannyThres2);
 
 	/// Apply the Hough Transform to find the circles
-	HoughCircles( src_gray, circles, CV_HOUGH_GRADIENT, 1, src_gray.rows/16, 100, 30, 1, 30 );
+	vector<Vec3f> circles;
+	HoughCircles( src_gray, circles, CV_HOUGH_GRADIENT, 1, src_gray.rows/16, 200, 80, 1, 128 );
 
 	cout << circles.size() << endl;
 	/// Draw the circles detected
