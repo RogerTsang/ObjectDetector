@@ -1,0 +1,66 @@
+N=40        Predicted-NO    Predicted-YES
+Actual-NO   14              6               20
+Actual-YES  9               11              20
+            23              17
+
+True Positive : 11
+True Negative : 14
+False Positive: 9
+False Negative: 6
+
+Accuracy: 
+(TP+TN)/total = (11+14)/40 = 62.5 %
+
+Misclassification Rate:
+(FP+FN)/total = (9+6)/40 = 37.5 %
+
+True Positive Rate:
+TP/Actual-YES = 11/20 = 55.0 %
+
+False Positive Rate:
+FP/Actual-NO  = 14/20 = 70.0 %
+
+Precision:
+TP/Predicted-YES = 11 / 17 = 64.7 %
+
+== Details ==
+../circle/000.bmp 1
+../not circle/000.bmp 0
+../circle/001.bmp 1
+../not circle/001.bmp 0
+../circle/002.bmp 0
+../not circle/002.bmp 0
+../circle/003.bmp 0
+../not circle/003.bmp 1
+../circle/004.bmp 1
+../not circle/004.bmp 0
+../circle/005.bmp 1
+../not circle/005.bmp 0
+../circle/006.bmp 1
+../not circle/006.bmp 0
+../circle/007.bmp 0
+../not circle/007.bmp 1
+../circle/008.bmp 0
+../not circle/008.bmp 1
+../circle/009.bmp 1
+../not circle/009.bmp 0
+../circle/010.bmp 1
+../not circle/010.bmp 0
+../circle/011.bmp 1
+../not circle/011.bmp 1
+../circle/012.bmp 0
+../not circle/012.bmp 0
+../circle/013.bmp 0
+../not circle/013.bmp 1
+../circle/014.bmp 0
+../not circle/014.bmp 0
+../circle/015.bmp 0
+../not circle/015.bmp 0
+../circle/016.bmp 0
+../not circle/016.bmp 1
+../circle/017.bmp 1
+../not circle/017.bmp 0
+../circle/018.bmp 1
+../not circle/018.bmp 0
+../circle/019.bmp 1
+../not circle/019.bmp 0
