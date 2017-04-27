@@ -1,0 +1,301 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 97.43      1.11     1.11       11     0.10     0.10  Transform(unsigned char*, int, int, int)
+  2.63      1.14     0.03       11     0.00     0.00  GetCircles(int, std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >&)
+  0.00      1.14     0.00        8     0.00     0.00  __gnu_cxx::__exchange_and_add(int volatile*, int)
+  0.00      1.14     0.00        7     0.00     0.00  cv::Mat::release()
+  0.00      1.14     0.00        6     0.00     0.00  cv::Mat::~Mat()
+  0.00      1.14     0.00        5     0.00     0.00  cv::Mat::MSize::MSize(int*)
+  0.00      1.14     0.00        5     0.00     0.00  cv::Mat::MStep::MStep()
+  0.00      1.14     0.00        4     0.00     0.00  cv::Mat::MStep::operator[](int)
+  0.00      1.14     0.00        4     0.00     0.00  cv::Mat::Mat()
+  0.00      1.14     0.00        4     0.00     0.00  cv::Mat::MStep::operator[](int) const
+  0.00      1.14     0.00        1     0.00     0.00  _GLOBAL__sub_I__accu
+  0.00      1.14     0.00        1     0.00     1.14  doTransformCircle(cv::Mat, double, int, int, int)
+  0.00      1.14     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      1.14     0.00        1     0.00     0.00  cv::Mat::Mat(cv::Mat const&)
+  0.00      1.14     0.00        1     0.00     0.00  cv::Mat::operator=(cv::Mat const&)
+  0.00      1.14     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::new_allocator()
+  0.00      1.14     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::~new_allocator()
+  0.00      1.14     0.00        1     0.00     0.00  std::allocator<std::pair<std::pair<int, int>, int> >::allocator()
+  0.00      1.14     0.00        1     0.00     0.00  std::allocator<std::pair<std::pair<int, int>, int> >::~allocator()
+  0.00      1.14     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*)
+  0.00      1.14     0.00        1     0.00     0.00  std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::_Vector_impl()
+  0.00      1.14     0.00        1     0.00     0.00  std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::~_Vector_impl()
+  0.00      1.14     0.00        1     0.00     0.00  std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_deallocate(std::pair<std::pair<int, int>, int>*, unsigned int)
+  0.00      1.14     0.00        1     0.00     0.00  std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_get_Tp_allocator()
+  0.00      1.14     0.00        1     0.00     0.00  std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_base()
+  0.00      1.14     0.00        1     0.00     0.00  std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~_Vector_base()
+  0.00      1.14     0.00        1     0.00     0.00  std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::vector()
+  0.00      1.14     0.00        1     0.00     0.00  std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~vector()
+  0.00      1.14     0.00        1     0.00     0.00  void std::_Destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*)
+  0.00      1.14     0.00        1     0.00     0.00  void std::_Destroy<std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int> >(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*, std::allocator<std::pair<std::pair<int, int>, int> >&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.88% of 1.14 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    1.14                 main [1]
+                0.00    1.14       1/1           doTransformCircle(cv::Mat, double, int, int, int) [2]
+                0.00    0.00       6/6           cv::Mat::~Mat() [11]
+                0.00    0.00       4/4           cv::Mat::Mat() [15]
+                0.00    0.00       1/1           cv::Mat::operator=(cv::Mat const&) [20]
+                0.00    0.00       1/1           cv::Mat::Mat(cv::Mat const&) [19]
+-----------------------------------------------
+                0.00    1.14       1/1           main [1]
+[2]    100.0    0.00    1.14       1         doTransformCircle(cv::Mat, double, int, int, int) [2]
+                1.11    0.00      11/11          Transform(unsigned char*, int, int, int) [3]
+                0.03    0.00      11/11          GetCircles(int, std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >&) [4]
+                0.00    0.00       1/1           std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::vector() [32]
+                0.00    0.00       1/1           std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~vector() [33]
+-----------------------------------------------
+                1.11    0.00      11/11          doTransformCircle(cv::Mat, double, int, int, int) [2]
+[3]     97.4    1.11    0.00      11         Transform(unsigned char*, int, int, int) [3]
+-----------------------------------------------
+                0.03    0.00      11/11          doTransformCircle(cv::Mat, double, int, int, int) [2]
+[4]      2.6    0.03    0.00      11         GetCircles(int, std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >&) [4]
+-----------------------------------------------
+                0.00    0.00       1/8           cv::Mat::Mat(cv::Mat const&) [19]
+                0.00    0.00       1/8           cv::Mat::operator=(cv::Mat const&) [20]
+                0.00    0.00       6/8           cv::Mat::release() [10]
+[9]      0.0    0.00    0.00       8         __gnu_cxx::__exchange_and_add(int volatile*, int) [9]
+-----------------------------------------------
+                0.00    0.00       1/7           cv::Mat::operator=(cv::Mat const&) [20]
+                0.00    0.00       6/7           cv::Mat::~Mat() [11]
+[10]     0.0    0.00    0.00       7         cv::Mat::release() [10]
+                0.00    0.00       6/8           __gnu_cxx::__exchange_and_add(int volatile*, int) [9]
+-----------------------------------------------
+                0.00    0.00       6/6           main [1]
+[11]     0.0    0.00    0.00       6         cv::Mat::~Mat() [11]
+                0.00    0.00       6/7           cv::Mat::release() [10]
+-----------------------------------------------
+                0.00    0.00       1/5           cv::Mat::Mat(cv::Mat const&) [19]
+                0.00    0.00       4/5           cv::Mat::Mat() [15]
+[12]     0.0    0.00    0.00       5         cv::Mat::MSize::MSize(int*) [12]
+-----------------------------------------------
+                0.00    0.00       1/5           cv::Mat::Mat(cv::Mat const&) [19]
+                0.00    0.00       4/5           cv::Mat::Mat() [15]
+[13]     0.0    0.00    0.00       5         cv::Mat::MStep::MStep() [13]
+-----------------------------------------------
+                0.00    0.00       2/4           cv::Mat::Mat(cv::Mat const&) [19]
+                0.00    0.00       2/4           cv::Mat::operator=(cv::Mat const&) [20]
+[14]     0.0    0.00    0.00       4         cv::Mat::MStep::operator[](int) [14]
+-----------------------------------------------
+                0.00    0.00       4/4           main [1]
+[15]     0.0    0.00    0.00       4         cv::Mat::Mat() [15]
+                0.00    0.00       4/5           cv::Mat::MSize::MSize(int*) [12]
+                0.00    0.00       4/5           cv::Mat::MStep::MStep() [13]
+-----------------------------------------------
+                0.00    0.00       2/4           cv::Mat::Mat(cv::Mat const&) [19]
+                0.00    0.00       2/4           cv::Mat::operator=(cv::Mat const&) [20]
+[16]     0.0    0.00    0.00       4         cv::Mat::MStep::operator[](int) const [16]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [78]
+[17]     0.0    0.00    0.00       1         _GLOBAL__sub_I__accu [17]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [18]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__accu [17]
+[18]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [18]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[19]     0.0    0.00    0.00       1         cv::Mat::Mat(cv::Mat const&) [19]
+                0.00    0.00       2/4           cv::Mat::MStep::operator[](int) [14]
+                0.00    0.00       2/4           cv::Mat::MStep::operator[](int) const [16]
+                0.00    0.00       1/5           cv::Mat::MSize::MSize(int*) [12]
+                0.00    0.00       1/5           cv::Mat::MStep::MStep() [13]
+                0.00    0.00       1/8           __gnu_cxx::__exchange_and_add(int volatile*, int) [9]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[20]     0.0    0.00    0.00       1         cv::Mat::operator=(cv::Mat const&) [20]
+                0.00    0.00       2/4           cv::Mat::MStep::operator[](int) [14]
+                0.00    0.00       2/4           cv::Mat::MStep::operator[](int) const [16]
+                0.00    0.00       1/8           __gnu_cxx::__exchange_and_add(int volatile*, int) [9]
+                0.00    0.00       1/7           cv::Mat::release() [10]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::pair<std::pair<int, int>, int> >::allocator() [23]
+[21]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::new_allocator() [21]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::pair<std::pair<int, int>, int> >::~allocator() [24]
+[22]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::~new_allocator() [22]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::_Vector_impl() [26]
+[23]     0.0    0.00    0.00       1         std::allocator<std::pair<std::pair<int, int>, int> >::allocator() [23]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::new_allocator() [21]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::~_Vector_impl() [27]
+[24]     0.0    0.00    0.00       1         std::allocator<std::pair<std::pair<int, int>, int> >::~allocator() [24]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::~new_allocator() [22]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*) [34]
+[25]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_base() [30]
+[26]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::_Vector_impl() [26]
+                0.00    0.00       1/1           std::allocator<std::pair<std::pair<int, int>, int> >::allocator() [23]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~_Vector_base() [31]
+[27]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::~_Vector_impl() [27]
+                0.00    0.00       1/1           std::allocator<std::pair<std::pair<int, int>, int> >::~allocator() [24]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~_Vector_base() [31]
+[28]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_deallocate(std::pair<std::pair<int, int>, int>*, unsigned int) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~vector() [33]
+[29]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_get_Tp_allocator() [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::vector() [32]
+[30]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_base() [30]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::_Vector_impl() [26]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~vector() [33]
+[31]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~_Vector_base() [31]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_deallocate(std::pair<std::pair<int, int>, int>*, unsigned int) [28]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::~_Vector_impl() [27]
+-----------------------------------------------
+                0.00    0.00       1/1           doTransformCircle(cv::Mat, double, int, int, int) [2]
+[32]     0.0    0.00    0.00       1         std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::vector() [32]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_base() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           doTransformCircle(cv::Mat, double, int, int, int) [2]
+[33]     0.0    0.00    0.00       1         std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~vector() [33]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_get_Tp_allocator() [29]
+                0.00    0.00       1/1           void std::_Destroy<std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int> >(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*, std::allocator<std::pair<std::pair<int, int>, int> >&) [35]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~_Vector_base() [31]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int> >(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*, std::allocator<std::pair<std::pair<int, int>, int> >&) [35]
+[34]     0.0    0.00    0.00       1         void std::_Destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*) [34]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~vector() [33]
+[35]     0.0    0.00    0.00       1         void std::_Destroy<std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int> >(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*, std::allocator<std::pair<std::pair<int, int>, int> >&) [35]
+                0.00    0.00       1/1           void std::_Destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*) [34]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [17] _GLOBAL__sub_I__accu   [15] cv::Mat::Mat()         [26] std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::_Vector_impl()
+   [4] GetCircles(int, std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >&) [11] cv::Mat::~Mat() [27] std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_impl::~_Vector_impl()
+   [2] doTransformCircle(cv::Mat, double, int, int, int) [20] cv::Mat::operator=(cv::Mat const&) [28] std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_deallocate(std::pair<std::pair<int, int>, int>*, unsigned int)
+  [18] __static_initialization_and_destruction_0(int, int) [21] __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::new_allocator() [29] std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_M_get_Tp_allocator()
+   [3] Transform(unsigned char*, int, int, int) [22] __gnu_cxx::new_allocator<std::pair<std::pair<int, int>, int> >::~new_allocator() [30] std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::_Vector_base()
+  [12] cv::Mat::MSize::MSize(int*) [9] __gnu_cxx::__exchange_and_add(int volatile*, int) [31] std::_Vector_base<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~_Vector_base()
+  [13] cv::Mat::MStep::MStep() [16] cv::Mat::MStep::operator[](int) const [32] std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::vector()
+  [14] cv::Mat::MStep::operator[](int) [23] std::allocator<std::pair<std::pair<int, int>, int> >::allocator() [33] std::vector<std::pair<std::pair<int, int>, int>, std::allocator<std::pair<std::pair<int, int>, int> > >::~vector()
+  [10] cv::Mat::release()     [24] std::allocator<std::pair<std::pair<int, int>, int> >::~allocator() [34] void std::_Destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*)
+  [19] cv::Mat::Mat(cv::Mat const&) [25] void std::_Destroy_aux<true>::__destroy<std::pair<std::pair<int, int>, int>*>(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*) [35] void std::_Destroy<std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int> >(std::pair<std::pair<int, int>, int>*, std::pair<std::pair<int, int>, int>*, std::allocator<std::pair<std::pair<int, int>, int> >&)
