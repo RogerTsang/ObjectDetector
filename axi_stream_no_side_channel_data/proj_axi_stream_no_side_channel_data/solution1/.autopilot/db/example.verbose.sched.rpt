@@ -1,0 +1,151 @@
+
+
+================================================================
+== Vivado HLS Report for 'example'
+================================================================
+* Date:           Tue May 02 00:10:02 2017
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        proj_axi_stream_no_side_channel_data
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  13.33|      2.00|        1.67|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   51|   51|   52|   52|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   50|   50|         1|          -|          -|    50|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!exitcond)
+* FSM state operations: 
+
+ <State 1>: 1.31ns
+ST_1: stg_3 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %A) nounwind, !map !0
+
+ST_1: stg_4 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %B) nounwind, !map !6
+
+ST_1: stg_5 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @example_str) nounwind
+
+ST_1: stg_6 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecInterface(i32* %A, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_1: stg_7 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecInterface(i32* %B, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_1: stg_8 [1/1] 1.31ns
+:5  br label %1
+
+
+ <State 2>: 2.00ns
+ST_2: i [1/1] 0.00ns
+:0  %i = phi i6 [ 0, %0 ], [ %i_1, %2 ]
+
+ST_2: exitcond [1/1] 1.51ns
+:1  %exitcond = icmp eq i6 %i, -14
+
+ST_2: empty [1/1] 0.00ns
+:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 50, i64 50, i64 50) nounwind
+
+ST_2: i_1 [1/1] 1.40ns
+:3  %i_1 = add i6 %i, 1
+
+ST_2: stg_13 [1/1] 0.00ns
+:4  br i1 %exitcond, label %3, label %2
+
+ST_2: A_read [1/1] 0.00ns
+:0  %A_read = call i32 @_ssdm_op_Read.axis.volatile.i32P(i32* %A) nounwind
+
+ST_2: tmp_1 [1/1] 2.00ns
+:1  %tmp_1 = add nsw i32 %A_read, 5
+
+ST_2: stg_16 [1/1] 0.00ns
+:2  call void @_ssdm_op_Write.axis.volatile.i32P(i32* %B, i32 %tmp_1) nounwind
+
+ST_2: stg_17 [1/1] 0.00ns
+:3  br label %1
+
+ST_2: stg_18 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

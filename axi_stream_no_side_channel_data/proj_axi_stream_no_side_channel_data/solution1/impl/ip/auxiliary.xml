@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="example" xd:componentRef="example" xd:initiationInterval="52" xd:clockPeriod="13.333333" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="A[]" xd:originalName="A" xd:direction="in" xd:interfaceRef="A" xd:busTypeRef="axis" xd:arraySize="50" xd:dataWidth="32"/>
+  <xd:arg xd:name="B[]" xd:originalName="B" xd:direction="out" xd:interfaceRef="B" xd:busTypeRef="axis" xd:arraySize="50" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="51" xd:worst-case="51" xd:average-case="51"/>
+  <xd:resourceEstimates xd:LUT="52" xd:FF="9" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,67 @@
+16:29:51 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:29:53 INFO  : XSDB server has started successfully.
+16:29:55 INFO  : Processing command line option -hwspec C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data_vivado/axi_stream_no_side_channel_data_vivado.sdk/design_zynq_wrapper.hdf.
+17:40:35 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:40:36 INFO  : XSDB server has started successfully.
+17:40:36 INFO  : Processing command line option -hwspec C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data_vivado/axi_stream_no_side_channel_data_vivado.sdk/design_zynq_wrapper.hdf.
+17:40:37 INFO  : Checking for hwspec changes in the project design_zynq_wrapper_hw_platform_0.
+00:51:07 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+00:51:09 INFO  : XSDB server has started successfully.
+00:51:16 INFO  : Processing command line option -hwspec C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data_vivado/axi_stream_no_side_channel_data_vivado.sdk/design_zynq_wrapper.hdf.
+00:51:16 INFO  : Checking for hwspec changes in the project design_zynq_wrapper_hw_platform_0.
+00:51:16 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1493650226153,  Project:1493620155886
+00:51:16 INFO  : The hardware specification for project 'design_zynq_wrapper_hw_platform_0' is different from C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data_vivado/axi_stream_no_side_channel_data_vivado.sdk/design_zynq_wrapper.hdf.
+00:51:16 INFO  : Copied contents of C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data_vivado/axi_stream_no_side_channel_data_vivado.sdk/design_zynq_wrapper.hdf into \design_zynq_wrapper_hw_platform_0\system.hdf.
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core example of version 1.0 not found in repositories
+
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+00:51:20 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core example of version 1.0 not found in repositories
+
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+00:51:20 INFO  : Unable to read in MSS file C:\Users\zengh\Documents\xup\axi_stream_no_side_channel_data_vivado\axi_stream_no_side_channel_data_vivado.sdk\helloworld_bsp\system.mss : null
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core example of version 1.0 not found in repositories
+
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core example of version 1.0 not found in repositories
+
+00:51:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+00:51:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core example of version 1.0 not found in repositories
+
+00:51:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+00:51:28 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+00:51:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core example of version 1.0 not found in repositories
+
+00:51:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+00:51:28 INFO  : Unable to read in MSS file C:\Users\zengh\Documents\xup\axi_stream_no_side_channel_data_vivado\axi_stream_no_side_channel_data_vivado.sdk\helloworld_bsp\system.mss : null
+00:51:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core example of version 1.0 not found in repositories
+
+00:51:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+00:51:38 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:51:43 INFO  : 
+00:51:43 INFO  : Clearing existing target manager status.
+00:51:44 INFO  : Closing and re-opening the MSS file of ther project helloworld_bsp
+00:54:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248530763" && level==0} -index 1' command is executed.
+00:54:32 INFO  : 'fpga -state' command is executed.
+00:54:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:54:33 INFO  : Sourcing of 'C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data_vivado/axi_stream_no_side_channel_data_vivado.sdk/design_zynq_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:54:33 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248530763"". available targets:
+  1  DAP (JTAG port open error. AP transaction timeout)
+  2* xc7z020
+00:54:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data_vivado/axi_stream_no_side_channel_data_vivado.sdk/design_zynq_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248530763"} -index 0
+----------------End of Script----------------
+
+00:54:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:54:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248530763" && level==0} -index 1' command is executed.
+00:54:43 ERROR : Cannot find memory context of target ARM_DAP
+01:06:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

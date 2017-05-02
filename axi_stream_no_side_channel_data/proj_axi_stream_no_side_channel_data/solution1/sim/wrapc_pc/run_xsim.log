@@ -1,0 +1,65 @@
+HLS AXI-Stream no side-channel data example
+Success HW and SW results match
+
+C:\Users\zengh\Documents\xup\axi_stream_no_side_channel_data\proj_axi_stream_no_side_channel_data\solution1\sim\vhdl>call xelab xil_defaultlib.apatb_example_top -prj example.prj --lib "ieee_proposed=./ieee_proposed" -s example  
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_example_top -prj example.prj --lib ieee_proposed=./ieee_proposed -s example 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/AESL_axi_s_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_s_A
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/AESL_axi_s_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_s_B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/example.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity apatb_example_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/example.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity example
+Starting static elaboration
+WARNING: [VRFC 10-1303] range is empty (null range) [/proj/xcohdstaff/fengc/head/HEAD/data/vhdl/src/ieee/distributable/numeric_std.vhd:3462]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behav of entity xil_defaultlib.example [example_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_A [\AESL_axi_s_A("../tv/cdatafile/c...]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_B [\AESL_axi_s_B("../tv/rtldatafile...]
+Compiling architecture behav of entity xil_defaultlib.apatb_example_top
+Built simulation snapshot example
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/xsim.dir/example/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 02 00:11:01 2017...
+
+****** xsim v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/example/xsim_script.tcl
+# xsim {example} -maxdeltaid 10000 -autoloadwcfg -tclbatch {example.tcl}
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source example.tcl
+## run all
+Note: simulation done!
+Time: 887110 ps  Iteration: 1  Process: /apatb_example_top/generate_sim_done_proc  File: C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/example.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 887110 ps  Iteration: 1  Process: /apatb_example_top/generate_sim_done_proc  File: C:/Users/zengh/Documents/xup/axi_stream_no_side_channel_data/proj_axi_stream_no_side_channel_data/solution1/sim/vhdl/example.autotb.vhd
+$finish called at time : 887110 ps
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue May 02 00:11:05 2017...
+HLS AXI-Stream no side-channel data example
+Success HW and SW results match

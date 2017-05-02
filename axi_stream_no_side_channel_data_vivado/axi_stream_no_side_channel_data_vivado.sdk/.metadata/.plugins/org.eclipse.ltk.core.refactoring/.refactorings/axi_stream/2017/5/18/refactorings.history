@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;axi_stream/src/helloworld.c&apos; to &apos;example_c_code.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="example_c_code.c" stamp="1493650414188" updateReferences="true"/>
+</session>
