@@ -14,10 +14,10 @@ int ImgProcess_Top(Mat src,Mat **dst,int rows, int cols,int threshold){
     int result = Setup_HW_Accelerator(rows, cols,threshold);
     if (result != 0) return -1;
     if(!src.isContinuous()) src=src.clone();
-    void * buffer = malloc(480*640*3);
-    result = Run_HW_Accelerator(src.data,buffer, 640,480);
+    void * buffer = malloc(rows*cols*3);
+    result = Run_HW_Accelerator(src.data,buffer, cols,rows);
 
-    *dst = new Mat(480, 640, CV_8UC3, buffer );
+    *dst = new Mat(rows, cols, CV_8UC3, buffer );
     if (result != 0) return -2;
     return 0;
 }
