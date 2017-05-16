@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="imgprocess.h" path="C:\Users\Alan\Skin_Color_Detect\imgprocess.h"/>
+    <originFiles name="top.cpp" path="C:\Users\Alan\Skin_Color_Detect\top.cpp"/>
+    <originFiles name="top.h" path="C:\Users\Alan\Skin_Color_Detect\top.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="C:\Users\Alan\Skin_Color_Detect\test.cpp"/>
+    <originFiles name="test.jpg" path="C:\Users\Alan\Skin_Color_Detect\test.jpg"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
