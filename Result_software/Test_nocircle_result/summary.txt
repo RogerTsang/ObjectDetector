@@ -1,0 +1,100 @@
+=== Profile for 000.bmp ===
+time	seconds	name
+97.55%	6.23	Transform(unsigned
+1.10%	6.30	sobel_operation(unsigned
+==
+=== Profile for 001.bmp ===
+time	seconds	name
+93.55%	1.87	Transform(unsigned
+2.00%	1.91	sobel_operation(unsigned
+==
+=== Profile for 002.bmp ===
+time	seconds	name
+97.13%	4.64	Transform(unsigned
+0.84%	4.68	GetCircles(unsigned
+==
+=== Profile for 003.bmp ===
+time	seconds	name
+86.93%	1.06	Transform(unsigned
+4.10%	1.11	ImgProcess(unsigned
+==
+=== Profile for 004.bmp ===
+time	seconds	name
+81.77%	0.76	Transform(unsigned
+6.46%	0.82	sobel_operation(unsigned
+==
+=== Profile for 005.bmp ===
+time	seconds	name
+94.17%	2.40	Transform(unsigned
+2.75%	2.47	sobel_operation(unsigned
+==
+=== Profile for 006.bmp ===
+time	seconds	name
+97.76%	5.95	Transform(unsigned
+1.23%	6.03	sobel_operation(unsigned
+==
+=== Profile for 007.bmp ===
+time	seconds	name
+97.49%	4.94	Transform(unsigned
+0.99%	4.99	sobel_operation(unsigned
+==
+=== Profile for 008.bmp ===
+time	seconds	name
+96.92%	4.63	Transform(unsigned
+1.05%	4.68	sobel_operation(unsigned
+==
+=== Profile for 009.bmp ===
+time	seconds	name
+96.66%	3.13	Transform(unsigned
+1.54%	3.18	sobel_operation(unsigned
+==
+=== Profile for 010.bmp ===
+time	seconds	name
+92.59%	1.86	Transform(unsigned
+1.99%	1.90	sobel_operation(unsigned
+==
+=== Profile for 011.bmp ===
+time	seconds	name
+94.52%	2.56	Transform(unsigned
+2.58%	2.63	sobel_operation(unsigned
+==
+=== Profile for 012.bmp ===
+time	seconds	name
+89.02%	1.29	Transform(unsigned
+6.21%	1.38	sobel_operation(unsigned
+==
+=== Profile for 013.bmp ===
+time	seconds	name
+88.58%	1.08	Transform(unsigned
+6.56%	1.16	sobel_operation(unsigned
+==
+=== Profile for 014.bmp ===
+time	seconds	name
+94.89%	2.57	Transform(unsigned
+1.48%	2.61	sobel_operation(unsigned
+==
+=== Profile for 015.bmp ===
+time	seconds	name
+94.39%	2.33	Transform(unsigned
+2.84%	2.40	sobel_operation(unsigned
+==
+=== Profile for 016.bmp ===
+time	seconds	name
+97.43%	5.57	Transform(unsigned
+0.87%	5.62	sobel_operation(unsigned
+==
+=== Profile for 017.bmp ===
+time	seconds	name
+90.56%	1.43	Transform(unsigned
+2.53%	1.47	ImgProcess(unsigned
+==
+=== Profile for 018.bmp ===
+time	seconds	name
+95.59%	2.78	Transform(unsigned
+1.38%	2.82	GetCircles(unsigned
+==
+=== Profile for 019.bmp ===
+time	seconds	name
+93.32%	1.94	Transform(unsigned
+3.85%	2.02	sobel_operation(unsigned
+==

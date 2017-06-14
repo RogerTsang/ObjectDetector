@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="top.h" path="C:\HLSProject\EdgeDetectorIP\top.h"/>
+    <originFiles name="top.cpp" path="C:\HLSProject\EdgeDetectorIP\top.cpp"/>
+    <originFiles name="imgprocess.h" path="C:\HLSProject\EdgeDetectorIP\imgprocess.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="C:\HLSProject\EdgeDetectorIP\test.cpp"/>
+    <originFiles name="test.bmp" path="C:\HLSProject\EdgeDetectorIP\test.bmp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

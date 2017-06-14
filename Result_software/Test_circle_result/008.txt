@@ -1,0 +1,340 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 95.35      2.23     2.23       11     0.20     0.20  Transform(unsigned char*, unsigned short*, int, int, int)
+  2.57      2.29     0.06    64009     0.00     0.00  sobel_operation(unsigned char*, unsigned char*)
+  1.28      2.32     0.03        1     0.03     0.03  ImgPostProcess(unsigned char*, unsigned char*, unsigned char*, int, int, int)
+  0.86      2.34     0.02        1     0.02     0.08  ImgProcess(unsigned char*, unsigned char*, unsigned char*, int, int)
+  0.00      2.34     0.00    64516     0.00     0.00  local_max(unsigned char*, unsigned char*, int)
+  0.00      2.34     0.00       15     0.00     0.00  cv::Mat::release()
+  0.00      2.34     0.00       15     0.00     0.00  cv::Mat::~Mat()
+  0.00      2.34     0.00       11     0.00     0.00  GetCircles(unsigned short (&) [65536], int, int, int, int)
+  0.00      2.34     0.00        7     0.00     0.00  cv::Mat::MSize::MSize(int*)
+  0.00      2.34     0.00        7     0.00     0.00  cv::Mat::MStep::MStep()
+  0.00      2.34     0.00        5     0.00     0.00  cv::Mat::Mat()
+  0.00      2.34     0.00        5     0.00     0.00  cv::MatExpr::~MatExpr()
+  0.00      2.34     0.00        5     0.00     0.00  cv::MatExpr::operator cv::Mat() const
+  0.00      2.34     0.00        4     0.00     0.00  cv::Mat::MStep::operator[](int)
+  0.00      2.34     0.00        4     0.00     0.00  cv::Mat::MStep::operator[](int) const
+  0.00      2.34     0.00        2     0.00     0.00  cv::Mat::Mat(cv::Mat const&)
+  0.00      2.34     0.00        2     0.00     0.00  cv::Size_<int>::Size_(int, int)
+  0.00      2.34     0.00        2     0.00     0.00  __gnu_cxx::__exchange_and_add(int volatile*, int)
+  0.00      2.34     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      2.34     0.00        1     0.00     2.23  HoughProcess(unsigned char*, unsigned char*, int, int)
+  0.00      2.34     0.00        1     0.00     2.34  ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*)
+  0.00      2.34     0.00        1     0.00     2.23  doTransformCircle(unsigned char*, double, int, int, int)
+  0.00      2.34     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      2.34     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00      2.34     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.00      2.34     0.00        1     0.00     0.00  std::allocator<int>::allocator()
+  0.00      2.34     0.00        1     0.00     0.00  std::allocator<int>::~allocator()
+  0.00      2.34     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      2.34     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  0.00      2.34     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      2.34     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int)
+  0.00      2.34     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00      2.34     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  0.00      2.34     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00      2.34     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00      2.34     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00      2.34     0.00        1     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00      2.34     0.00        1     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.43% of 2.34 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    2.34                 main [1]
+                0.00    2.34       1/1           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+                0.00    0.00       2/2           cv::Mat::Mat(cv::Mat const&) [24]
+                0.00    0.00       1/5           cv::MatExpr::operator cv::Mat() const [21]
+                0.00    0.00       1/5           cv::MatExpr::~MatExpr() [20]
+                0.00    0.00       1/2           cv::Size_<int>::Size_(int, int) [25]
+-----------------------------------------------
+                0.00    2.34       1/1           main [1]
+[2]    100.0    0.00    2.34       1         ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+                0.00    2.23       1/1           HoughProcess(unsigned char*, unsigned char*, int, int) [4]
+                0.02    0.06       1/1           ImgProcess(unsigned char*, unsigned char*, unsigned char*, int, int) [6]
+                0.03    0.00       1/1           ImgPostProcess(unsigned char*, unsigned char*, unsigned char*, int, int, int) [8]
+                0.00    0.00       4/5           cv::MatExpr::operator cv::Mat() const [21]
+                0.00    0.00       4/5           cv::MatExpr::~MatExpr() [20]
+                0.00    0.00       1/2           cv::Size_<int>::Size_(int, int) [25]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector() [40]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [41]
+-----------------------------------------------
+                2.23    0.00      11/11          doTransformCircle(unsigned char*, double, int, int, int) [5]
+[3]     95.3    2.23    0.00      11         Transform(unsigned char*, unsigned short*, int, int, int) [3]
+-----------------------------------------------
+                0.00    2.23       1/1           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[4]     95.3    0.00    2.23       1         HoughProcess(unsigned char*, unsigned char*, int, int) [4]
+                0.00    2.23       1/1           doTransformCircle(unsigned char*, double, int, int, int) [5]
+-----------------------------------------------
+                0.00    2.23       1/1           HoughProcess(unsigned char*, unsigned char*, int, int) [4]
+[5]     95.3    0.00    2.23       1         doTransformCircle(unsigned char*, double, int, int, int) [5]
+                2.23    0.00      11/11          Transform(unsigned char*, unsigned short*, int, int, int) [3]
+                0.00    0.00      11/11          GetCircles(unsigned short (&) [65536], int, int, int, int) [16]
+-----------------------------------------------
+                0.02    0.06       1/1           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[6]      3.4    0.02    0.06       1         ImgProcess(unsigned char*, unsigned char*, unsigned char*, int, int) [6]
+                0.06    0.00   64009/64009       sobel_operation(unsigned char*, unsigned char*) [7]
+-----------------------------------------------
+                0.06    0.00   64009/64009       ImgProcess(unsigned char*, unsigned char*, unsigned char*, int, int) [6]
+[7]      2.6    0.06    0.00   64009         sobel_operation(unsigned char*, unsigned char*) [7]
+-----------------------------------------------
+                0.03    0.00       1/1           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[8]      1.3    0.03    0.00       1         ImgPostProcess(unsigned char*, unsigned char*, unsigned char*, int, int, int) [8]
+                0.00    0.00   64516/64516       local_max(unsigned char*, unsigned char*, int) [13]
+-----------------------------------------------
+                0.00    0.00   64516/64516       ImgPostProcess(unsigned char*, unsigned char*, unsigned char*, int, int, int) [8]
+[13]     0.0    0.00    0.00   64516         local_max(unsigned char*, unsigned char*, int) [13]
+-----------------------------------------------
+                0.00    0.00      15/15          cv::Mat::~Mat() [15]
+[14]     0.0    0.00    0.00      15         cv::Mat::release() [14]
+-----------------------------------------------
+                0.00    0.00      15/15          cv::MatExpr::~MatExpr() [20]
+[15]     0.0    0.00    0.00      15         cv::Mat::~Mat() [15]
+                0.00    0.00      15/15          cv::Mat::release() [14]
+-----------------------------------------------
+                0.00    0.00      11/11          doTransformCircle(unsigned char*, double, int, int, int) [5]
+[16]     0.0    0.00    0.00      11         GetCircles(unsigned short (&) [65536], int, int, int, int) [16]
+-----------------------------------------------
+                0.00    0.00       2/7           cv::Mat::Mat(cv::Mat const&) [24]
+                0.00    0.00       5/7           cv::Mat::Mat() [19]
+[17]     0.0    0.00    0.00       7         cv::Mat::MSize::MSize(int*) [17]
+-----------------------------------------------
+                0.00    0.00       2/7           cv::Mat::Mat(cv::Mat const&) [24]
+                0.00    0.00       5/7           cv::Mat::Mat() [19]
+[18]     0.0    0.00    0.00       7         cv::Mat::MStep::MStep() [18]
+-----------------------------------------------
+                0.00    0.00       5/5           cv::MatExpr::operator cv::Mat() const [21]
+[19]     0.0    0.00    0.00       5         cv::Mat::Mat() [19]
+                0.00    0.00       5/7           cv::Mat::MSize::MSize(int*) [17]
+                0.00    0.00       5/7           cv::Mat::MStep::MStep() [18]
+-----------------------------------------------
+                0.00    0.00       1/5           main [1]
+                0.00    0.00       4/5           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[20]     0.0    0.00    0.00       5         cv::MatExpr::~MatExpr() [20]
+                0.00    0.00      15/15          cv::Mat::~Mat() [15]
+-----------------------------------------------
+                0.00    0.00       1/5           main [1]
+                0.00    0.00       4/5           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[21]     0.0    0.00    0.00       5         cv::MatExpr::operator cv::Mat() const [21]
+                0.00    0.00       5/5           cv::Mat::Mat() [19]
+-----------------------------------------------
+                0.00    0.00       4/4           cv::Mat::Mat(cv::Mat const&) [24]
+[22]     0.0    0.00    0.00       4         cv::Mat::MStep::operator[](int) [22]
+-----------------------------------------------
+                0.00    0.00       4/4           cv::Mat::Mat(cv::Mat const&) [24]
+[23]     0.0    0.00    0.00       4         cv::Mat::MStep::operator[](int) const [23]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[24]     0.0    0.00    0.00       2         cv::Mat::Mat(cv::Mat const&) [24]
+                0.00    0.00       4/4           cv::Mat::MStep::operator[](int) [22]
+                0.00    0.00       4/4           cv::Mat::MStep::operator[](int) const [23]
+                0.00    0.00       2/7           cv::Mat::MSize::MSize(int*) [17]
+                0.00    0.00       2/7           cv::Mat::MStep::MStep() [18]
+                0.00    0.00       2/2           __gnu_cxx::__exchange_and_add(int volatile*, int) [26]
+-----------------------------------------------
+                0.00    0.00       1/2           main [1]
+                0.00    0.00       1/2           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[25]     0.0    0.00    0.00       2         cv::Size_<int>::Size_(int, int) [25]
+-----------------------------------------------
+                0.00    0.00       2/2           cv::Mat::Mat(cv::Mat const&) [24]
+[26]     0.0    0.00    0.00       2         __gnu_cxx::__exchange_and_add(int volatile*, int) [26]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [50]
+[27]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [27]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [27]
+[28]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::allocator() [31]
+[29]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::new_allocator() [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::~allocator() [32]
+[30]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::~new_allocator() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [34]
+[31]     0.0    0.00    0.00       1         std::allocator<int>::allocator() [31]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::new_allocator() [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [35]
+[32]     0.0    0.00    0.00       1         std::allocator<int>::~allocator() [32]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::~new_allocator() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [42]
+[33]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [38]
+[34]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [34]
+                0.00    0.00       1/1           std::allocator<int>::allocator() [31]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [39]
+[35]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [35]
+                0.00    0.00       1/1           std::allocator<int>::~allocator() [32]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [39]
+[36]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [36]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [41]
+[37]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [37]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector() [40]
+[38]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_base() [38]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [34]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [41]
+[39]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [39]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [36]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [35]
+-----------------------------------------------
+                0.00    0.00       1/1           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[40]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::vector() [40]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [38]
+-----------------------------------------------
+                0.00    0.00       1/1           ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [2]
+[41]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::~vector() [41]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [37]
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [43]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [43]
+[42]     0.0    0.00    0.00       1         void std::_Destroy<int*>(int*, int*) [42]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [41]
+[43]     0.0    0.00    0.00       1         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [43]
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [42]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [27] _GLOBAL__sub_I_main (software.cpp) [22] cv::Mat::MStep::operator[](int) [32] std::allocator<int>::~allocator()
+  [16] GetCircles(unsigned short (&) [65536], int, int, int, int) [14] cv::Mat::release() [33] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+   [6] ImgProcess(unsigned char*, unsigned char*, unsigned char*, int, int) [24] cv::Mat::Mat(cv::Mat const&) [34] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+   [4] HoughProcess(unsigned char*, unsigned char*, int, int) [19] cv::Mat::Mat() [35] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+   [8] ImgPostProcess(unsigned char*, unsigned char*, unsigned char*, int, int, int) [15] cv::Mat::~Mat() [36] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int)
+   [2] ImgProcess_Top(cv::Mat, cv::Mat, int, int, int, char*) [25] cv::Size_<int>::Size_(int, int) [37] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+   [7] sobel_operation(unsigned char*, unsigned char*) [20] cv::MatExpr::~MatExpr() [38] std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+   [5] doTransformCircle(unsigned char*, double, int, int, int) [29] __gnu_cxx::new_allocator<int>::new_allocator() [39] std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  [28] __static_initialization_and_destruction_0(int, int) (software.cpp) [30] __gnu_cxx::new_allocator<int>::~new_allocator() [40] std::vector<int, std::allocator<int> >::vector()
+   [3] Transform(unsigned char*, unsigned short*, int, int, int) [26] __gnu_cxx::__exchange_and_add(int volatile*, int) (atomicity.h) [41] std::vector<int, std::allocator<int> >::~vector()
+  [13] local_max(unsigned char*, unsigned char*, int) [23] cv::Mat::MStep::operator[](int) const [42] void std::_Destroy<int*>(int*, int*)
+  [17] cv::Mat::MSize::MSize(int*) [21] cv::MatExpr::operator cv::Mat() const [43] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  [18] cv::Mat::MStep::MStep() [31] std::allocator<int>::allocator()

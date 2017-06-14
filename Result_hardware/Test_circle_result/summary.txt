@@ -1,0 +1,100 @@
+=== Profile for 000.bmp ===
+time	seconds	name
+86.20%	11.81	Run_HW_Accelerator(void*,
+13.58%	13.67	XEdgedetect_top_IsDone
+==
+=== Profile for 001.bmp ===
+time	seconds	name
+90.03%	3.43	Run_HW_Accelerator(void*,
+9.45%	3.79	XEdgedetect_top_IsDone
+==
+=== Profile for 002.bmp ===
+time	seconds	name
+89.22%	6.29	Run_HW_Accelerator(void*,
+10.50%	7.03	XEdgedetect_top_IsDone
+==
+=== Profile for 003.bmp ===
+time	seconds	name
+88.16%	5.14	Run_HW_Accelerator(void*,
+11.66%	5.82	XEdgedetect_top_IsDone
+==
+=== Profile for 004.bmp ===
+time	seconds	name
+86.15%	20.97	Run_HW_Accelerator(void*,
+13.72%	24.31	XEdgedetect_top_IsDone
+==
+=== Profile for 005.bmp ===
+time	seconds	name
+85.33%	5.35	Run_HW_Accelerator(void*,
+14.19%	6.24	XEdgedetect_top_IsDone
+==
+=== Profile for 006.bmp ===
+time	seconds	name
+88.75%	7.81	Run_HW_Accelerator(void*,
+10.91%	8.77	XEdgedetect_top_IsDone
+==
+=== Profile for 007.bmp ===
+time	seconds	name
+87.72%	5.00	Run_HW_Accelerator(void*,
+11.75%	5.67	XEdgedetect_top_IsDone
+==
+=== Profile for 008.bmp ===
+time	seconds	name
+86.69%	5.60	Run_HW_Accelerator(void*,
+13.16%	6.45	XEdgedetect_top_IsDone
+==
+=== Profile for 009.bmp ===
+time	seconds	name
+83.86%	4.26	Run_HW_Accelerator(void*,
+15.55%	5.05	XEdgedetect_top_IsDone
+==
+=== Profile for 010.bmp ===
+time	seconds	name
+86.91%	5.38	Run_HW_Accelerator(void*,
+12.60%	6.16	XEdgedetect_top_IsDone
+==
+=== Profile for 011.bmp ===
+time	seconds	name
+86.86%	3.24	Run_HW_Accelerator(void*,
+12.60%	3.71	XEdgedetect_top_IsDone
+==
+=== Profile for 012.bmp ===
+time	seconds	name
+87.88%	11.46	Run_HW_Accelerator(void*,
+11.89%	13.01	XEdgedetect_top_IsDone
+==
+=== Profile for 013.bmp ===
+time	seconds	name
+87.55%	12.94	Run_HW_Accelerator(void*,
+12.25%	14.75	XEdgedetect_top_IsDone
+==
+=== Profile for 014.bmp ===
+time	seconds	name
+86.04%	4.93	Run_HW_Accelerator(void*,
+13.44%	5.70	XEdgedetect_top_IsDone
+==
+=== Profile for 015.bmp ===
+time	seconds	name
+85.33%	7.62	Run_HW_Accelerator(void*,
+14.22%	8.89	XEdgedetect_top_IsDone
+==
+=== Profile for 016.bmp ===
+time	seconds	name
+84.11%	5.93	Run_HW_Accelerator(void*,
+15.46%	7.02	XEdgedetect_top_IsDone
+==
+=== Profile for 017.bmp ===
+time	seconds	name
+86.52%	16.75	Run_HW_Accelerator(void*,
+13.38%	19.34	XEdgedetect_top_IsDone
+==
+=== Profile for 018.bmp ===
+time	seconds	name
+87.33%	4.48	Run_HW_Accelerator(void*,
+12.09%	5.10	XEdgedetect_top_IsDone
+==
+=== Profile for 019.bmp ===
+time	seconds	name
+84.54%	4.32	Run_HW_Accelerator(void*,
+14.68%	5.07	XEdgedetect_top_IsDone
+==

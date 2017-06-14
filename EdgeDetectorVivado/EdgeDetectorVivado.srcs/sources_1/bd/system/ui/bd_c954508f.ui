@@ -1,0 +1,33 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 170 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 190 -defaultsOSRD
+preplace inst EdgeDetect_Top_0 -pg 1 -lvl 3 -y 210 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 4 -y 160 -defaultsOSRD
+preplace inst rst_processing_system7_0_80M -pg 1 -lvl 1 -y 260 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -y 190 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 240 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -y 220 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 6 1 NJ
+preplace netloc EdgeDetect_Top_0_interrupt 1 3 3 NJ 350 NJ 350 2060
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 2 850 90 N
+preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 4 280 20 NJ 20 N 20 1740
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 2420
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 4 1 N
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 2 3 880 0 NJ 0 1720
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 -80 -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 2430
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 N
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 4 290 380 880 290 1380 280 1740
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 -70 350 300 100 860 100 1380 40 1730 340 2050 320 2420
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 4 1 N
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 870
+preplace netloc EdgeDetect_Top_0_OUTPUT_STREAM 1 3 1 1370
+levelinfo -pg 1 -100 120 700 1180 1560 1900 2240 2450 -top -410 -bot 390
+",
+}
+{
+   da_axi4_cnt: "5",
+   da_ps7_cnt: "1",
+}
